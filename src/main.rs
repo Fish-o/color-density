@@ -18,10 +18,10 @@ use std::io::{Read, Write};
 use threadpool::ThreadPool;
 
 // Variables to tinker with:
-const SIZE: usize = 32;
-const SECS: u64 = 1;
+const SIZE: usize = 4;
+const SECS: u64 = 60 * 5;
 const THREADS: usize = 16; // I used 16 threads for every test
-const COLORS: RangeInclusive<u8> = 2..=16;
+const COLORS: RangeInclusive<u8> = 1..=16;
 
 // SIZE 4 PROCEDURE 62/64 (97%)
 //  1 generated 1 sec 2297484/s
